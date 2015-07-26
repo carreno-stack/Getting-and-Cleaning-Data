@@ -145,7 +145,7 @@ Renaming 'Acceleration\_Jerk' as 'Linear\_Jerk', 'Gyro\_Jerk' as 'Angular\_Jerk'
     colnames(cleandataset)<-gsub("Gyro_Jerk","Angular_Jerk",colnames(cleandataset))
     colnames(cleandataset)<-gsub("Gyro","Angular_Speed",colnames(cleandataset))
 
-##5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+##5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject
 
 To achieve this, the function summarise_each() of the *dplyr* library is being used as follows.
 
@@ -162,6 +162,10 @@ The first step is to use group\_by to group the data by subject, activity_ID and
 Then, summarise_each is used to produce the average for each variable per activity/subject. Although as.data.frame is not necessary, this would produce a clean data frame *finaldata*.
 
     finaldata<-as.data.frame(summarise_each(group,funs(mean)))
+    
+Colnames are edited to include "Average" since we're averaging all variables
+
+    colnames(finaldata)<-gsub("]","]Average_",colnames(finaldata))
 
 ##Writing out the final dataset to a clean file
 
