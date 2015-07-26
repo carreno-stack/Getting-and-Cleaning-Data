@@ -38,32 +38,49 @@
     
     Codes:
 
-    1. WALKING
-    2. WALKING_UPSTAIRS
-    3. WALKING_DOWNSTAIRS
-    4. SITTING
-    5. STANDING
-    6. LAYING
+    1.WALKING
+    
+    2.WALKING_UPSTAIRS
+    
+    3.WALKING_DOWNSTAIRS
+    
+    4.SITTING
+    
+    5.STANDING
+    
+    6.LAYING
 
 
 ### 2. Final Table
-
 The tidy data is contained on the *finaldata* data frame. Dimensions: 180x82. Description of the 82 columns:
+
 1. **subject**: Subject ID, 30 different unique subjects.
 2. **activity_ID**: Activity ID (numeric). There are 6 Different activities and *activity_ID* includes the corresponding number.
-    1. WALKING
-    2. WALKING_UPSTAIRS
-    3. WALKING_DOWNSTAIRS
-    4. SITTING
-    5. STANDING
-    6. LAYING
+    
+    1.WALKING
+    
+    2.WALKING_UPSTAIRS
+    
+    3.WALKING_DOWNSTAIRS
+    
+    4.SITTING
+    
+    5.STANDING
+    
+    6.LAYING
 3. **activity**: Activity name. There are 6 Different activities and *activity* includes the corresponding name.
-    1. WALKING
-    2. WALKING_UPSTAIRS
-    3. WALKING_DOWNSTAIRS
-    4. SITTING
-    5. STANDING
-    6. LAYING
+    
+    1.WALKING
+    
+    2.WALKING_UPSTAIRS
+    
+    3.WALKING_DOWNSTAIRS
+    
+    4.SITTING
+    
+    5.STANDING
+    
+    6.LAYING
 4. **[Time]Average_Body_Acceleration_Mean_X_Axis**: Average body acceleration mean for Axis X per subject and activity. Units: standard 'g' [m/s^2^]
 5. **[Time]Average_Body_Acceleration_Mean_Y_Axis**: Average body acceleration mean for Axis Y per subject and activity. Units: standard 'g' [m/s^2^]
 6. **[Time]Average_Body_Acceleration_Mean_Z_Axis**: Average body acceleration mean for Axis Z per subject and activity. Units: standard 'g' [m/s^2^]
