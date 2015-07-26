@@ -163,7 +163,7 @@ Then, summarise_each is used to produce the average for each variable per activi
 
     finaldata<-as.data.frame(summarise_each(group,funs(mean)))
     
-Colnames are edited to include "Average" since we're averaging all variables
+Colnames are edited to include "Average" since we're averaging all variables (except subject, activity_ID and activity)
 
     colnames(finaldata)<-gsub("]","]Average_",colnames(finaldata))
 
